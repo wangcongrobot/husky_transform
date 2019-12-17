@@ -1,0 +1,7 @@
+<launch>
+
+    <rosparam file="$(find husky_transform)/config/husky_ur_tf_parameters.yaml" command="load" />
+
+    <node name="husky_transform" pkg="husky_transform" type="husky_transform" output="screen" />
+
+</launch>
